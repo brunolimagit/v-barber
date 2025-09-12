@@ -75,8 +75,9 @@ export function Header() {
           <img src={logo} alt="logo" className="w-[400px] h-auto" />
           <button className="bg-transparent border-2 border-[#A3772D] text-[#a3772d] font-bold py-2 px-7 rounded ml-4 hover:bg-[#a3772d] hover:text-[white] transition-all duration-300 cursor-pointer hover:scale-115">Agendar Agora</button>
         </div>
-
+<h1> test</h1>
       </div>
+      
     </header>
   );
 }
