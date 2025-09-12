@@ -76,6 +76,7 @@ export function Header() {
           <button className="bg-transparent border-2 border-[#A3772D] text-[#a3772d] font-bold py-2 px-7 rounded ml-4 hover:bg-[#a3772d] hover:text-[white] transition-all duration-300 cursor-pointer hover:scale-115">Agendar Agora</button>
         </div>
 <h1> test</h1>
+<h2>test 2</h2>
       </div>
       
     </header>
