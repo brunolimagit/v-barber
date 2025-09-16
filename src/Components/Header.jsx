@@ -3,9 +3,12 @@ import logo2 from "../assets/logo2.png";
 import logo from "../assets/logo.png";
 import pole from "../assets/pole.png"
 import bg from "../assets/bg-section.jpg"
-import "./header.css"
+import {Link} from "react-router-dom"
 
-export function Header() {
+
+
+
+export default function Header({setOpen}) {
   return (
     <header className="w-full flez-wrap"> 
       <div className="flex justify-between px-25 items-center bg-black">
@@ -19,7 +22,7 @@ export function Header() {
           className="text-[#A3772D] font-bold cursor-pointer flex gap-1 text-[13px]"
           target="_blank "
         >
-          <MapPin size={20} className="text-white" /> Av. das Américas 12300 Loja 104 - BlueCenter - Barra da Tijuca
+          <MapPin size={20} className="text-white" /> Av. das Américas 12300 Loja 104 - BlueCenter - Fortaleza
           <img src={pole} alt="img pole" className="w-[20px]" />
         </a>
         <div className="flex gap-4">
@@ -44,36 +47,36 @@ export function Header() {
         <nav className="flex justify-center w-full">
           <ul className="flex gap-20 my-4 text-[#A3772D] font-bold cursor-pointer ">
             <li className="hover:scale-115 hover:text-white transition-all duration-300">
-              <a>
+              <Link>
                 Início
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-115 hover:text-white transition-all duration-300">
-              <a>
+              <Link>
                 Clube V-Barber
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-115 hover:text-white transition-all duration-300">
-              <a>
+              <Link>
                 Quem Somos
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-115 hover:text-white transition-all duration-300">
-              <a>
+              <Link>
                 Onde Estamos
-              </a>
+              </Link>
             </li>
             <li className="hover:scale-115 hover:text-white transition-all duration-300">
-              <a>
+              <Link to="/contato">
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="flex flex-col items-center justify-center mt-10">
           <img src={logo} alt="logo" className="w-[400px] h-auto" />
-          <button className="bg-transparent border-2 border-[#A3772D] text-[#a3772d] font-bold py-2 px-7 rounded ml-4 hover:bg-[#a3772d] hover:text-[white] transition-all duration-300 cursor-pointer hover:scale-115">Agendar Agora</button>
+          <button className="bg-transparent border-2 border-[#A3772D] text-[#a3772d] font-bold py-2 px-7 rounded ml-4 hover:bg-[#a3772d] hover:text-[white] transition-all duration-300 cursor-pointer hover:scale-115" onClick={() => setOpen(true)}>Agendar Agora</button>
         </div>
       </div>
       
