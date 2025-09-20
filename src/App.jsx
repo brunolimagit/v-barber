@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Header open={open} setOpen={setOpen} />
+      <Header setOpen={setOpen} />
       <Drawer open={open} setOpen={setOpen} />
     </>
   );

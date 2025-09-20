@@ -1,11 +1,15 @@
 
+import { useState } from "react";
+import Drawer from "../Components/Drawer.jsx";
 import Header from "../Components/Header.jsx";
 
 export default function Home() {
+  const [open, setOpen]= useState(false)
   return (
     <>
-      <Header />
-      <h1 className="text-red-500 text-[30px]"> test</h1>
+      <Header  setOpen={setOpen} />
+      
+      <Drawer open={open} setOpen={setOpen}/>
   
     </>
   );
