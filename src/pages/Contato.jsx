@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Header from "../Components/Header";
-import { AppFooter } from "../Components/AppFooter";
+import InFooter  from "../Components/inFooter";
 
 export default function Contato() {
   const [open, setOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Contato() {
         </form>
       </Header>
 
-      <AppFooter/>
+      <InFooter/>
     </div>
   );
 }
