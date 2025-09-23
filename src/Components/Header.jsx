@@ -4,7 +4,6 @@ import logo from "../assets/logo.png";
 import pole from "../assets/pole.png";
 import bg from "../assets/bg-section.jpg";
 import { Link } from "react-router-dom";
-import { Children } from "react";
 
 export default function Header({
   setOpen,

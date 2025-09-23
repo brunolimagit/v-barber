@@ -38,8 +38,10 @@ export default function Drawer({open, setOpen}) {
                   <div className="px-4 sm:px-6">
                     <DialogTitle className="text-center font-semibold text-[#a3772d]">AGENDAR</DialogTitle>
                   </div>
-                  <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                  <div className="relative mt-6 flex flex-col px-4 gap-4 sm:px-10 ">
                     <input type="text" placeholder='nome completo' className='bg-white/10 w-full p-2 rounded text-white font-bold' />
+                    <input type="text" placeholder='' className='bg-white/10 w-full p-2 rounded text-white font-bold' />
+                    <input type="text" placeholder='' className='bg-white/10 w-full p-2 rounded text-white font-bold' />
                   </div>
                 </div>
               </DialogPanel>
